@@ -1,15 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
-const Curso = () => (
+const mayorEdad = edad => edad > 20;
+
+const Curso = ({id, image, nombre, price, edad }) => (
 
     <article className="card">
         <div className="img-container s-ratio-16-9 s-radius-tr s-radius-tl">
-            <img src="https://edteam-media.s3.amazonaws.com/courses/original/4d60ef81-2e58-457f-97c7-ee8847663985.jpg" alt="logoGo" />
+            <Link to={`/cursos/${id}`}>
+                <img src={image} alt="logoGo" />
+            </Link>
         </div>
         <div className="card__data s-border s-radius-br s-radius-bl s-pxy-2">
             <h3 className="t5 s-mb-2 s-center">
-                Programación orientada a objetos con Go
-        </h3>
+                {mayorEdad(edad) ? "Curso Go" : "Curso PhP"}
+            </h3>
             <div className="s-mb-2 s-main-center">
                 <div className="card__teacher s-cross-center">
                     <div className="card__avatar s-mr-1">
@@ -17,14 +23,27 @@ const Curso = () => (
                             <img src="https://lh3.googleusercontent.com/a-/AOh14Gjbd4Iyn73_jo8xMB8sKFJ0BG_MuQjrPtp6Bj9YsA" alt="profesor" />
                         </div>
                     </div>
-                    <span className="small">Diego Sullon</span>
+                    <span className="small">{nombre}</span>
                 </div>
             </div>
             <div className="s-main-center">
-                <a className="button--ghost-alert button--tiny" href="google.com">$ 200USD</a>
+                <a className="button--ghost-alert button--tiny" href="google.com">{price}</a>
             </div>
         </div>
     </article>
 
 )
+Curso.propTypes = {
+    title: PropTypes.string,
+    image: PropTypes.string,
+    price: PropTypes.string,
+    nombre: PropTypes.string
+}
+Curso.defaultProps = {
+    title: "No se encontró título",
+    image: "https://cdn.pixabay.com/photo/2020/03/06/11/14/black-4906807_960_720.jpg",
+    price: "__",
+    nombre: ""
+
+}
 export default Curso;
