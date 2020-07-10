@@ -1,5 +1,5 @@
 import React from 'react';
-import Curso from './Curso';
+import Curso from '../Molecules/Curso';
 let persona={"nombre":"Alvaro Montenegro","edad":"28"};
 let image="https://edteam-media.s3.amazonaws.com/courses/original/4d60ef81-2e58-457f-97c7-ee8847663985.jpg";
 const cursos=[
