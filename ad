@@ -1,0 +1,35 @@
+[33mcommit a3f061913b3e5f7a7c0b0dd3fd67cd06dd560272[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Sat Jul 11 15:09:57 2020 -0500
+
+    Hooks
+
+[33mcommit 749a91be8fdc9b5e5fd5fba1db9d91d849553f2c[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Fri Jul 10 17:23:44 2020 -0500
+
+    HOC
+
+[33mcommit 8b517536cc616987e260eabc525e77c32e1e843c[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Thu Jul 9 20:03:03 2020 -0500
+
+    Peticiones API Rest
+
+[33mcommit 03390b26889e0dd31c8798f9cc2da8fa3e23f682[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Thu Jul 9 09:51:32 2020 -0500
+
+    React Router
+
+[33mcommit d28fe87c69d7cdd9c6d80a3fe7c3958cd105a360[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Wed Jul 1 19:40:15 2020 -0500
+
+    primer commit react
+
+[33mcommit 7675fa2e35b157cbfa5027f59a4edd538b166b2d[m
+Author: Diego Sullon <jdiego.sullon@gmail.com>
+Date:   Wed Jul 1 12:53:20 2020 -0500
+
+    Initialize project using Create React App
